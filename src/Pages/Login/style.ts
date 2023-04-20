@@ -18,16 +18,16 @@ export const DivImg = styled.div`
 
 export const DivLogin = styled.div`
     width: 40%;
-    height: 60vh;
     margin: auto;
 
     div {
         width: 60%;
+        height: 100vh;
         margin: 0 auto;
-        /* background: blue; */
     }
 
     form {
+        padding-top: 10rem;
         display: flex;
         flex-direction: column;
         gap: 0.4rem;
@@ -45,7 +45,7 @@ export const DivLogin = styled.div`
         border-radius: 1rem;
         width: 100%;
         padding: 0.75rem 0;
-        padding-left: 10px;
+        padding-left: 0.5rem;
     }
 
     input::placeholder {
