@@ -45,12 +45,11 @@ export const DivLogin = styled.div`
         border-radius: 1rem;
         width: 100%;
         padding: 0.75rem 0;
-        padding-left: 0.5rem;
     }
 
     input::placeholder {
         color: grey;
-        margin-left:10px;
+        padding-left:0.5rem;
     }
 
     input:hover {
