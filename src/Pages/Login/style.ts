@@ -35,7 +35,8 @@ export const DivLogin = styled.div`
     }
 
     label {
-        font-size: 1.5rem;
+        font-size: 1rem;
+        padding-left: 0.2rem;
     }
 
     input {
