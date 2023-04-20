@@ -21,12 +21,17 @@ export const DivLogin = styled.div`
     height: 60vh;
     margin: auto;
 
+    div {
+        width: 60%;
+        margin: 0 auto;
+        /* background: blue; */
+    }
+
     form {
         display: flex;
         flex-direction: column;
         gap: 0.4rem;
         justify-content: center;
-        align-items: center;
     }
 
     label {
@@ -37,12 +42,18 @@ export const DivLogin = styled.div`
         margin: 0 auto;
         border: 1px solid orange;
         border-radius: 1rem;
-        width: 60%;
+        width: 100%;
         padding: 0.75rem 0;
+        padding-left: 10px;
+    }
+
+    input::placeholder {
+        color: grey;
+        margin-left:10px;
     }
 
     input:hover {
-        border: 1px solid filter:brightness(120%);
+        border-;
     }
 
     input:nth-child(5) {
@@ -50,10 +61,12 @@ export const DivLogin = styled.div`
         background: orange;
         animation: 1s;
         margin-top: 1rem;
+        text-align: center;
     }
 
     input:nth-child(5):hover {
         border: 1px solid #JA3883;
         filter: brightness(104%);
+        cursor: pointer;
     }
 `;

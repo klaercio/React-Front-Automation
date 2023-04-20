@@ -12,13 +12,15 @@ export default function Login() {
       <Container>
         <DivImg/>
         <DivLogin>
+          <div>
            <form onSubmit = {onSubmitForm}>
               <label htmlFor='usuario'>Usuário:</label>
-              <input type='text' id = 'usuario'name='usuario' required/>
+              <input type='text' id = 'usuario'name='usuario' placeholder='Usuário' required/>
               <label htmlFor = 'senha'>Senha:</label>
-              <input type='text' id = 'senha' name='senha' required/>
+              <input type='text' id = 'senha' name='senha' required placeholder='Senha'/>
               <input type = 'submit' value="Entrar"/>
            </form>
+          </div>
         </DivLogin>
       </Container>
     </>;
