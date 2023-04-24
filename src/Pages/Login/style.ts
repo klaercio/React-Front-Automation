@@ -44,17 +44,13 @@ export const DivLogin = styled.div`
         border: 1px solid orange;
         border-radius: 1rem;
         width: 100%;
-        padding: 0.75rem 0;
+        padding: 0.75rem 0 0.75rem 0.5rem;
     }
 
-    input::placeholder {
+    /* input::placeholder {
         color: grey;
         padding-left:0.5rem;
-    }
-
-    input:hover {
-        border-;
-    }
+    } */
 
     input:nth-child(5) {
         border: 1px solid orange;
@@ -62,11 +58,17 @@ export const DivLogin = styled.div`
         animation: 1s;
         margin-top: 1rem;
         text-align: center;
+        transition: all 0.3s;
     }
 
     input:nth-child(5):hover {
-        border: 1px solid #JA3883;
+        border: 1px solid #FA3883;
         filter: brightness(104%);
         cursor: pointer;
+        color: white;
+    }
+
+    input:focus::-webkit-input-placeholder {
+        color: transparent;
     }
 `;

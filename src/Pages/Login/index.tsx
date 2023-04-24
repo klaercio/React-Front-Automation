@@ -1,5 +1,6 @@
 import React, { FormEventHandler } from "react";
 import { DivImg, Container, DivLogin } from "./style";
+import SucessLogin from "../../components/MessageModal/index";
 
 
 export default function Login() {
@@ -15,13 +16,14 @@ export default function Login() {
           <div>
            <form onSubmit = {onSubmitForm}>
               <label htmlFor='usuario'>Usuário:</label>
-              <input type='text' id = 'usuario'name='usuario' placeholder='Usuário' required/>
+              <input type='text' id = 'usuario'name='usuario' placeholder='Usuário' required />
               <label htmlFor = 'senha'>Senha:</label>
               <input type='text' id = 'senha' name='senha' required placeholder='Senha'/>
               <input type = 'submit' value="Entrar"/>
            </form>
           </div>
         </DivLogin>
+        <SucessLogin visivel={true} status={'error'}/>
       </Container>
     </>;
 }
