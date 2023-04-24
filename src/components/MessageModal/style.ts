@@ -19,6 +19,8 @@ export const Container = styled.div`
     gap: 0.5rem;
     align-items: center;
     color: ${(props) => props.color};
+    transform: translateY(-4rem);
+    animation: toFall 3s, sucess 3s;
 
     p {
         border-radius: 50%;
@@ -30,23 +32,32 @@ export const Container = styled.div`
         font-size: 2rem;
     }
 
-    &:hover {
-        top: 1rem;
-        animation: sucess 0.4s;
-    }
-
     @keyframes sucess{
         0% {
             border-left: 2px solid ${(props) => props.color};
         }
-        25% {
+        98% {
             border-bottom: 2px solid ${(props) => props.color};
         }
-        50% {
+        99% {
             border-right: 2px solid ${(props) => props.color};
         }
         100% {
             border-top: 2px solid ${(props) => props.color};
+        }
+    }
+
+    @keyframes toFall {
+        0% {
+            transform: translateY(-4rem);
+            filter: opacity(50%);
+        }
+        50% {
+            filter: opacity(100%);
+        }
+        100% {
+            transform: translateY(1rem);
+            filter: opacity(0%);
         }
     }
 `;

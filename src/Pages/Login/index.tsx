@@ -23,7 +23,7 @@ export default function Login() {
            </form>
           </div>
         </DivLogin>
-        <SucessLogin visivel={true} status={'error'}/>
+        <SucessLogin visivel={true} status={'sucess'}/>
       </Container>
     </>;
 }
