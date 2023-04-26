@@ -1,7 +1,5 @@
 import React, { FormEventHandler } from "react";
 import { DivImg, Container, DivLogin } from "./style";
-import SucessLogin from "../../components/MessageModal/index";
-
 
 export default function Login() {
 
@@ -23,7 +21,6 @@ export default function Login() {
            </form>
           </div>
         </DivLogin>
-        <SucessLogin visivel={true} status={'sucess'}/>
       </Container>
     </>;
 }

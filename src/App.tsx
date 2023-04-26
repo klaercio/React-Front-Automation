@@ -1,11 +1,9 @@
-import { useState } from 'react';
+import Login from "./Pages/Login"
 
 function App() {
 
   return (<>
-    <div className="App">
-        Hello World!
-    </div>
+    <Login/>    
   </>
   )
 }
